@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Portfolio</title>
+<body>
+<div class="container">
+<h1>Student Portfolio</h1>
+</div>
+
+<style>
+.container {text-align: center;}
+</style>
+
+
+<div class="profile-container">
+<img src="https://i.pinimg.com/736x/bc/9a/fb/bc9afbc9a44050ee8dfa7163ef315ccb.jpg" alt="Profile Picture" class="profile-picture">
+<p class="profile-description"><i>Hình ảnh chỉ mang tính chất minh họa</i></p>
+
+</div>
+
+
+<style>
+.profile-container {position: absolute; top: 60px; left: 300px; text-align: center;}
+.profile-picture {width: 200px; height: 200px;}
+.profile-description {font-size: 14px;color: green;margin-top: 4px;}
+</style>
+
+
+
+<p><strong>Tên:</strong> Ahihi Ohoho</p>
+<p><strong>Tủi:</strong> 17</p>
+<p><strong>Ngày/tháng/năm sinh:</strong> 8/8/2007</p>
+<p><strong>Giới tính:</strong> XX</p>
+<h2>Kết quả học tập</h2>
+<ul>
+<li>Tốt nghiệp cấp 1</li>
+<li>Tốt nghiệp cấp 2</li>
+<li>Rớt cấp 3</li>
+</ul>
+<br>
+<br>
+<h2>Tham khảo "portfolio" của người khác</h2>
+<div class="links">
+<a href="https://www.facebook.com/profile.php?id=100057430272138"target="_blank">Người bí ẩn 1</a>
+<br>
+<a href="https://www.facebook.com/khanhdii1107" target="_blank">Người bí ẩn 2</a>
+<br>
+<a href="https://www.facebook.com/profile.php?id=100073199777012" target="_blank">Người bí ẩn 3</a>
+
+</body>
+</html>
