@@ -1,52 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Student Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Biệt đội cung khòn</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            text-align: center;
+        }
+        #title-box {
+            background-color: lightgreen;
+            color: darkgreen;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: lightgray;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+        }
+        #member-content, #mission-content {
+            text-align: left;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .circle-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .image-container {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+        .image-description {
+            font-style: italic;
+            margin-top: 5px;
+        }
+        #video {
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+        #rectangle-image {
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
-<div class="container">
-<h1>Student Portfolio</h1>
-</div>
 
-<style>
-.container {text-align: center;}
-</style>
+    <!-- Title -->
+    <div id="title-box">Biệt đội cung khòn</div>
 
+    <!-- Button 1: Thành viên -->
+    <button class="button" onclick="toggleContent('member-content')">Thành viên</button>
+    <div id="member-content" class="content">
+        <p><b>Ngô Huỳnh Anh</b></p>
+        <ul style="list-style-type:circle">
+            <li>Tuổi: 17 tuổi</li>
+            <li>Giới tính: Nữ</li>
+            <li>Sở thích: ngủ, ăn, đọc truyện</li>
+            <li>Môn học yêu thích: Ko có</li>
+            <li>Thành tích: Giải KK HSG tỉnh Sinh học, 7.5 IELTS, Giải Ba Casio Sinh học</li>
+        </ul>
 
-<div class="profile-container">
-<img src="https://i.pinimg.com/736x/bc/9a/fb/bc9afbc9a44050ee8dfa7163ef315ccb.jpg" alt="Profile Picture" class="profile-picture">
-<p class="profile-description"><i>Hình ảnh chỉ mang tính chất minh họa</i></p>
+        <p><b>Thiều Kỳ Nhông</b></p>
+        <ul style="list-style-type:circle">
+            <li>Tuổi: 17 tuổi</li>
+            <li>Giới tính: Nam</li>
+            <li>Sở thích: chơi bê đê, game gú</li>
+            <li>Môn học yêu thích: Thể dục, Hóa học</li>
+            <li>Thành tích: Giải nhất cờ vua, Giải ba liên quân, Giải nhất bóng chuyền (với tư cách là dự bị)</li>
+        </ul>
 
-</div>
+        <p><b>Phan Bảo Minh</b></p>
+        <ul style="list-style-type:circle">
+            <li>Tuổi: 17 tuổi</li>
+            <li>Giới tính: Nữ</li>
+            <li>Sở thích: khắc nguyên</li>
+            <li>Môn học yêu thích: Sinh học</li>
+            <li>Thành tích: Bí thư lớp 12A1</li>
+        </ul>
+    </div>
 
+    <!-- Button 2: Tỉu sử và nhiệm vụ -->
+    <button class="button" onclick="toggleContent('mission-content')">Tỉu sử và nhiệm vụ</button>
+    <div id="mission-content" class="content">
+        <p><i>Tiểu sử:</i></p>
+        <ul style="list-style-type:circle">
+            <li> Thành lập: 14/11/2024</li>
+            <li> Số thành viên: 3</li>
+            <li> In4 thành viên:
+                <ul style="list-style-type:disc">
+                    <li><a href="https://www.facebook.com/hang.ming.507" target="_blank">Bảo Minh</a></li>
+                    <li><a href="https://www.facebook.com/baphuynhanh/" target="_blank">Huỳnh Anh</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100057430272138" target="_blank">Kỳ Phong</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p><i>Nhiệm vụ:</i></p>
+        <ul style="list-style-type:circle">
+            <li> Nhiệm vụ: Làm website giới thiệu</li>
+            <li> Yêu cầu: Chứa video, hình; nhìn được</li>
+            <li> Phân công:
+                <ul style="list-style-type:disc">
+                    <li>H.Anh: Viết code </li>
+                    <li>K.Phong: Ý tưởng, tìm code</li>
+                    <li>B.Minh: Nguồn vid,ảnh; hỗ trợ sửa lỗi</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-<style>
-.profile-container {position: absolute; top: 60px; left: 300px; text-align: center;}
-.profile-picture {width: 200px; height: 200px;}
-.profile-description {font-size: 14px;color: green;margin-top: 4px;}
-</style>
+    <!-- Rounded Images -->
+    <div>
+        <div class="image-container">
+            <img src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-6/448804419_961839402407060_2974181011014353451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHHcUthRiRPkP0k_7KTgo1cVBzOhHbj8mdUHM6EduPyZ7DpeID90yLGYLgBDtYNTtF3aoHePgNlAjLyDByvEGzh&_nc_ohc=6o63oNoLG74Q7kNvgFKQl4S&_nc_zt=23&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=AvNVLspKkfqcT7Q8PvF4Q4T&oh=00_AYCxZUUbyikV2w0nKTPrcm1aJ9_NQq_ZyjR7a_84oMNzFQ&oe=673CD603" class="circle-image" alt="Image 1">
+            <p class="image-description"><i>Hoàng tử zó</i></p>
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-1/358426039_796992662079455_2147204602909871525_n.jpg?stp=dst-jpg_s200x200&_nc_cat=110&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGrFIT8p1FM69gsIDTSRUnhv71r0AUtciu_vWvQBS1yK-TLs0QYsEuyn8DRP8Go6bN5UziY9GSK_8FT0x46o7hs&_nc_ohc=l0hlcQQL3bQQ7kNvgFHm0vo&_nc_zt=24&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=A0IsMRP-j1-rJD4baml6acM&oh=00_AYBTub6WOlD8ROoeblul_LZjBGq6P9dVbmFrXwXg43Tjlw&oe=673CDF33" class="circle-image" alt="Image 2">
+            <p class="image-description">Ny khắc nguyên</p>
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.6435-9/90621636_507074146629284_4123664664292753408_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHaYGOavzaIQOx3kuz4oONCzAVTBC1N4HnMBVMELU3geRlAMiiI6Q6rsUewHb9sLa_z--XY3fPGfx6jg21nradj&_nc_ohc=llzOUs-j5loQ7kNvgE0S2Ug&_nc_zt=23&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AI-Ux5Sq8SWddOQ46rdPSvM&oh=00_AYAC0yIYfHjo5zfYqt5zAj4Vn7nk_7phGSl0ctAgodOBmg&oe=675E9E7C" class="circle-image" alt="Image 3">
+            <p class="image-description">Bắp Huỳnh Anh</p>
+        </div>
+    </div>
 
+    <!-- Video-->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yoYv_ezmvqI?autoplay=1" allow="autoplay" allowfullscreen></iframe>
+    </div>
 
+    <!-- Goodbye-->
+    <div>
+        <img src="https://media.makeameme.org/created/goodbye-916ab9a9d8.jpg" id="rectangle-image" alt="Rectangle Image">
+    </div>
 
-<p><strong>Tên:</strong> Ahihi Ohoho</p>
-<p><strong>Tủi:</strong> 17</p>
-<p><strong>Ngày/tháng/năm sinh:</strong> 8/8/2007</p>
-<p><strong>Giới tính:</strong> XX</p>
-<h2>Kết quả học tập</h2>
-<ul>
-<li>Tốt nghiệp cấp 1</li>
-<li>Tốt nghiệp cấp 2</li>
-<li>Rớt cấp 3</li>
-</ul>
-<br>
-<br>
-<h2>Tham khảo "portfolio" của người khác</h2>
-<div class="links">
-<a href="https://www.facebook.com/profile.php?id=100057430272138"target="_blank">Người bí ẩn 1</a>
-<br>
-<a href="https://www.facebook.com/khanhdii1107" target="_blank">Người bí ẩn 2</a>
-<br>
-<a href="https://www.facebook.com/profile.php?id=100073199777012" target="_blank">Người bí ẩn 3</a>
+    <script>
+        // Function to toggle content visibility
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
+
+
+
+
